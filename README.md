@@ -14,18 +14,25 @@ Install pip env by running .setup_pipenv file in GitBash or similar shell.
 > . .setup_pipenv
 ```
 
-## Install your needed python modules
+## Tips
 
-> pipenv install requests
+### Install your needed python modules
+```
+> pipenv install requests -i pypi
 *or*
 > pipenv install 
+```
 
-
-## Remove virtual environment
+### Remove virtual environment
 
 ```
 > pipenv --rm
 ```
 
+### Step into virtual environment
+
+```
+> pipenv shell
+```
 
 [1]: https://www.google.com/search?q=install+pip3&oq=install+pip3
