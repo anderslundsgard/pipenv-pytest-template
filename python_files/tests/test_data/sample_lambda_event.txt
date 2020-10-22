@@ -1,0 +1,21 @@
+{
+    'Records': [{
+            'EventSource': 'aws:sns',
+            'EventVersion': '1.0',
+            'EventSubscriptionArn': 'arn:aws:sns:eu-west-1:123456789012:app-event-notifier-company:0e156447-c940-4ec0-aa6f-31db33e8f586',
+            'Sns': {
+                'Type': 'Notification',
+                'MessageId': '0af63ef5-5c71-5aae-aed4-682d6c9fbee3',
+                'TopicArn': 'arn:aws:sns:eu-west-1:123456789012:app-event-notifier-company',
+                'Subject': 'app Continuous compliance: Entity status change detected',
+                'Message': '{"status":"Failed","policy":{"name":"company-team-testing","description":""},"findingKey":"xxxxxxxxxxxxxxxxxxxxxxxx","bundle":{"name":"Compliance Framework","description":"Compliance framework for Company Accounts","id":92990},"reportTime":"2018-03-03T09:31:19.403Z","rule":{"name":"No security group should allow unencrypted HTTP (port 80) traffic for whole world","ruleId":"","description":"You likely want to expose a web application and should ensure that traffic is sent to your endpoint is encrypted using port 443 instead of 80.","remediation":"Using encrypted traffic (port 443) you typically need a certificate. For services that support Amazon Certificate Manager (ACM) you preferable use ACM.","complianceTags":"","logicHash":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx","severity":"High"},"account":{"id":"210987654321","name":"company-dev","vendor":"AWS","appCloudAccountId":"ef381914-b57d-4754-9743-c57a85b34e45","organizationalUnitId":"00000000-0000-0000-0000-000000000000","organizationalUnitPath":""},"region":"Ireland","entity":{"description":"2018-02-26T08:57:36.854Z","inboundRules":[{"protocol":"TCP","port":80,"portTo":80,"scope":"0.0.0.0/0","scopeMetaData":null,"serviceType":"CIDR"},{"protocol":"TCP","port":5432,"portTo":5432,"scope":"0.0.0.0/0","scopeMetaData":null,"serviceType":"CIDR"}],"outboundRules":[{"protocol":"ALL","port":0,"portTo":0,"scope":"0.0.0.0/0","scopeMetaData":null,"serviceType":"CIDR"},{"protocol":"ALL","port":0,"portTo":65535,"scope":"0.0.0.0/0","scopeMetaData":null,"serviceType":"CIDR"}],"inboundPrefixes":[],"outboundPrefixes":[],"dependentSecurityGroups":null,"networkAssetsStats":[{"type":"ELBs","count":0},{"type":"instances","count":0},{"type":"RDSs","count":0},{"type":"LambdaFunctions","count":0},{"type":"Redshifts","count":0},{"type":"ApplicationLoadBalancers","count":0},{"type":"EFSs","count":0},{"type":"ElastiCacheClusters","count":0},{"type":"EmrClusters","count":0}],"isProtected":false,"networkInterfaces":[],"vpc":{"cloudAccountId":"12e81914-b57d-4754-9743-c57a85b34e34","cidr":"10.8.32.0/19","region":"eu_west_1","id":"vpc-23dc05b3e2ad43212","accountNumber":"000987654321","vpnGateways":[],"dhcpOptionsId":"dopt-075bcd61","instanceTenancy":"default","isDefault":false,"state":"available","name":"core-vpc","vpcPeeringConnections":null,"source":"Db"},"id":"sg-02dd1641adfe7f2db","type":"SecurityGroup","name":"FG-pos-2688","appId":"1|1c281914-b57d-4754-9743-c57a85b3418e|rg|2|sg|sg-02dd1641adfe7f2db-102043","accountNumber":"000987654321","region":"eu_west_1","source":"db","tags":[{"key": "aws:cloudformation:stack-name","value": "sws-guide-storage-dev"},{"key": "ServiceName","value": "sws-guide-storage"}],"externalFindings":null},"remediationActions":[]}',
+                'Timestamp': '2018-03-03T10:17:18.947Z',
+                'SignatureVersion': '1',
+                'Signature': '...==',
+                'SigningCertUrl': 'https://sns.eu-west-1.amazonaws.com/SimpleNotificationService-a86cb10b4e1f29c941702d737128f67e.pem',
+                'UnsubscribeUrl': 'https://sns.eu-west-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:eu-west-1:123456789012:app-event-notifier-company:0e156447-c940-4ec0-aa6f-31db33e8f456',
+                'MessageAttributes': {}
+            }
+        }
+    ]
+}
