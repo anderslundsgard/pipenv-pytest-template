@@ -14,10 +14,11 @@ def test__sample_test():
 
     with open(test_file, 'r') as file:
         notification = file.read()
+
     event = eval(notification)
 
     # Act
     # handler(event, None)
 
     # Assert
-    assert 1 == 1
+    assert event is not None
