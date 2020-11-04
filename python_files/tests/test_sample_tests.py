@@ -1,6 +1,5 @@
 import os
 import pytest
-# from python_files.src import main
 from pkg.main import main, raises_exception
 
 
@@ -9,6 +8,20 @@ __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file
 
 def get_test_resource(file_name):
     return os.path.join(__location__, 'test_resources', file_name)
+
+
+@pytest.fixture
+def reuse_me():
+    arr = []
+    return arr
+
+
+def test__reuse_arr(reuse_me):
+    # Arrange
+    reuse_me.append('dummy')
+
+    # Assert
+    assert len(reuse_me) == 1
 
 
 def test__sample_test():
