@@ -1,5 +1,8 @@
 import os
+import pytest
 # from python_files.src import main
+from pkg.main import main, raises_exception
+
 
 __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
 
@@ -22,3 +25,20 @@ def test__sample_test():
 
     # Assert
     assert event is not None
+
+
+def test__main():
+    # Arrange
+
+    # Act
+    main()
+
+    # Assert
+
+
+def test_pytest_exception():
+    # Arrange
+
+    # Act, Assert
+    with pytest.raises(Exception):
+        raises_exception()
