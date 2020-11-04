@@ -9,9 +9,17 @@ export PIP_INDEX_URL=https://pypi.org/simple
 
 ## Get up and running
 
-Install pip env by running .setup_pipenv file in GitBash or similar shell.
+Install pipenv by running:
+
+**GitBash on Windows**:  
 ```
 > . .setup_pipenv
+```
+
+**Mac:**
+```
+> chmod +x .setup_pipenv 
+> ./p.setup_pipenv
 ```
 
 ## Tips

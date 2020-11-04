@@ -1,6 +1,6 @@
 import os
 import pytest
-from pkg.main import main, raises_exception
+from pkg import main
 
 
 __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
@@ -44,14 +44,25 @@ def test__main():
     # Arrange
 
     # Act
-    main()
+    main.main()
 
     # Assert
 
 
-def test_pytest_exception():
+def test__pytest_exception():
     # Arrange
 
     # Act, Assert
     with pytest.raises(Exception):
-        raises_exception()
+        main.raises_exception()
+
+
+def test__sample_mock(mocker):
+    # Arrange
+    mocker.patch('pkg.main.sleep_100', return_value='sleep_100 mocked!')
+
+    # Act
+    response = main.calling_sleep_100()
+
+    # Assert
+    assert response == 'sleep_100 mocked!'
