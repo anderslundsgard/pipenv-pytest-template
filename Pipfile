@@ -1,6 +1,6 @@
 [[source]]
 name = "pypi"
-url = "${PIP_INDEX_URL}"
+url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
