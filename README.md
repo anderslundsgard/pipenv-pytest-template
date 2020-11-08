@@ -1,3 +1,8 @@
+
+
+[![Build Status](https://travis-ci.org/anderslundsgard/pipenv-pytest-template.svg?branch=master)](hhttps://travis-ci.org/anderslundsgard/pipenv-pytest-template)
+
+
 ## Prerequirements
 
 - [Install pip3][1]
