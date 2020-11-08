@@ -1,6 +1,6 @@
 language: python
-python:
+python: 
     - "3.8"
 install:
-    - pip install pipenv
+    # - pip install pipenv
     - pipenv --version
