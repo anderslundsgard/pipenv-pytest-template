@@ -2,6 +2,10 @@ language: python
 python: 
     - "3.8"
 install:
-    # - pip install pipenv
-    - pipenv --version
+    - echo "1"
+    - pip install pipenv
+    - echo "2"
+    - pipenv install --dev
+    - echo "3"
+    - pytest
 script: pytest
