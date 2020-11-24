@@ -8,6 +8,7 @@ flake8 = "*"
 pylint = "*"
 pytest = "*"
 pytest-mock = "*"
+pytest-flake8 = {version = "*", index = "https://pypi.org/simple"}
 
 [packages]
 boto3 = "*"
