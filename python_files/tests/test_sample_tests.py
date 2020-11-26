@@ -71,8 +71,8 @@ def test__sample_mock(mocker):
 @pytest.mark.skip(reason="Just skip this test for demo")
 def test__skip_me():
     # Arrange
-   
+
     # Act
-   
+
     # Assert
     assert 1 == 0
