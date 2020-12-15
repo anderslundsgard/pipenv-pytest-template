@@ -5,4 +5,5 @@
     "python.testing.pytestArgs": [
         "python_files"
     ],
+    "python.pythonPath": ".venv/bin/python",
 }

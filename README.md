@@ -1,3 +1,15 @@
+
+
+[![Build Status](https://travis-ci.org/anderslundsgard/pipenv-pytest-template.svg?branch=master)](hhttps://travis-ci.org/anderslundsgard/pipenv-pytest-template)
+
+Showcase following programming languages, frameworks/tools and techniques:
+
+ - Python
+ - Pytest
+ - Pipenv
+ - Flake8
+ - Travis CI
+
 ## Prerequirements
 
 - [Install pip3][1]

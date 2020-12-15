@@ -1,6 +1,8 @@
 language: python
-python:
+python: 
     - "3.8"
 install:
     - pip install pipenv
-    - pipenv sync
+    - pipenv install --dev
+script: 
+    - pytest --flake8
