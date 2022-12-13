@@ -41,7 +41,15 @@ pipenv_sync() {
     pipenv shell
 }
 
-pipenv_update
+
+if [ "$1" == "--update" ]; then
+    pipenv_update
+    echo "Running pipenv update"
+else
+    pipenv_sync
+    echo "Running pipen sync"
+fi
+
 
 echo '================================================================================================='
 echo 'ALL DONE, HAVE FUN!'
